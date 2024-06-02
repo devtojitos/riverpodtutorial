@@ -37,8 +37,8 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   void _scrollListener() {
     if (_allPokemonListScrollController.offset >=
-            _allPokemonListScrollController.position.maxScrollExtent * 6 &&
-        _allPokemonListScrollController.position.outOfRange) {
+            _allPokemonListScrollController.position.maxScrollExtent * 1 &&
+        !_allPokemonListScrollController.position.outOfRange) {
       print("end of list reached");
 
       _homePageController.loadData();
